@@ -264,6 +264,7 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import ReactFlagsSelect, { Fm } from "react-flags-select";
 import { IoMdArrowDropdown } from "react-icons/io";
+import { toast, ToastContainer } from "react-toastify";
 
 import "./DemoSection.css";
 // import SvgCz from "react-flags-select/build/components/Flags/Countries/Cz";
@@ -274,6 +275,12 @@ const DemoSection = () => {
   const [dropdown, setDropdown] = useState(false);
   const [value, setValue] = useState(<AE title="UAE" />);
   const [formValues, setFormValues] = useState({});
+
+  const notify = () => {
+    toast.success("Form Submission Success", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -292,7 +299,9 @@ const DemoSection = () => {
       )
       .then(
         (result) => {
-          console.log(result);
+          if (result.status === 200) {
+            notify();
+          }
         },
         (error) => {
           console.log(error.text);
@@ -568,6 +577,7 @@ const DemoSection = () => {
   ];
   return (
     <div>
+      <ToastContainer />
       <Container>
         <Grid container spacing={0}>
           <Grid item xs={12} sm={7} md={7} lg={7}>
