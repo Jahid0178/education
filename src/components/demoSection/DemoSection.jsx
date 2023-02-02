@@ -282,6 +282,12 @@ const DemoSection = () => {
     });
   };
 
+  const errorPopUp = (msg) => {
+    toast.error(msg, {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
+
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -301,10 +307,11 @@ const DemoSection = () => {
         (result) => {
           if (result.status === 200) {
             notify();
+            setFormValues("");
           }
         },
         (error) => {
-          console.log(error.text);
+          errorPopUp(error.text);
         }
       );
   };
@@ -652,14 +659,14 @@ const DemoSection = () => {
                     >
                       <FormControlLabel
                         value="parent"
-                        control={<Radio size="small" />}
+                        control={<Radio size="small" required />}
                         label="Parent"
                         name="who"
                         onChange={handleChange}
                       />
                       <FormControlLabel
                         value="student"
-                        control={<Radio size="small" />}
+                        control={<Radio size="small" required />}
                         label="Student"
                         className="radio-btn"
                         name="who"
@@ -695,6 +702,7 @@ const DemoSection = () => {
                           size="small"
                           onChange={handleChange}
                           name="education"
+                          required
                         />
                       }
                       label="Graduated"
@@ -706,6 +714,7 @@ const DemoSection = () => {
                           size="small"
                           onChange={handleChange}
                           name="education"
+                          required
                         />
                       }
                       label="12th"
@@ -718,6 +727,7 @@ const DemoSection = () => {
                           size="small"
                           onChange={handleChange}
                           name="education"
+                          required
                         />
                       }
                       label="11th"
@@ -729,6 +739,7 @@ const DemoSection = () => {
                           size="small"
                           onChange={handleChange}
                           name="education"
+                          required
                         />
                       }
                       label="10th or less"
@@ -847,7 +858,7 @@ const DemoSection = () => {
                     </div>
                     <input
                       className="demo-input-code"
-                      type="text"
+                      type="number"
                       required
                       onChange={handleChange}
                       name="number"

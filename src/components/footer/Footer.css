@@ -28,7 +28,6 @@
   border: none;
   width: 40px;
   display: inline-block;
-
 }
 
 .locate-us {
@@ -56,18 +55,16 @@
   color: #f6f6f6 !important;
   text-decoration: none;
   display: block;
-  font-family: poppins,sans-serif!important;
+  font-family: poppins, sans-serif !important;
   line-height: 23px;
-
 }
 .footer-link {
-    color: #f6f6f6 !important;
-    text-decoration: none;
-    display: block;
-    line-height: 2.6rem;
-    font-family: poppins,sans-serif!important;
-
-  }
+  color: #f6f6f6 !important;
+  text-decoration: none;
+  display: block;
+  line-height: 2.6rem;
+  font-family: poppins, sans-serif !important;
+}
 .subscribe-btn {
   border-radius: 20px;
   background: transparent;
@@ -111,19 +108,24 @@
   text-align: center;
 }
 
-.address-section{
-    display: flex;
-margin-top: -10px;
-margin-bottom: -20px;
+.address-section {
+  display: flex;
+  margin-top: -10px;
+  margin-bottom: -20px;
 }
 
-.address-logo{
-    margin-top: 20px;
-    margin-right: 5px;
+.address-logo {
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 
 @media screen and (max-width: 480px) {
-  .footer-input{
+  .footer-input {
     display: flex;
     margin: 10px auto 15px auto;
     border-radius: 20px;
