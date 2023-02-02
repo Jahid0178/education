@@ -5,9 +5,18 @@ import "./Form.css";
 import { Container } from "@mui/material";
 import Call from "../../assets/call.gif";
 import emailjs from "@emailjs/browser";
+import { toast, ToastContainer } from "react-toastify";
+
+import "react-toastify/dist/ReactToastify.css";
 const Form = () => {
   const [formValues, setFormValues] = useState({});
   const form = useRef();
+
+  const notify = () => {
+    toast.success("Form Submission Success", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -26,7 +35,9 @@ const Form = () => {
       )
       .then(
         (result) => {
-          console.log(result);
+          if (result.status === 200) {
+            notify();
+          }
         },
         (error) => {
           console.log(error.text);
@@ -40,6 +51,7 @@ const Form = () => {
 
   return (
     <div id="form" className="form">
+      <ToastContainer />;
       <div className="form-section-main">
         <Container>
           <Grid container spacing={0}>
