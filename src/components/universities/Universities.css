@@ -1,0 +1,33 @@
+.university{
+    width: 90%;
+    display: block;
+    margin: 10px auto;
+}
+.university-heading{
+    text-align: center;
+}
+.uni-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.uni-section-two{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.uni-section-three{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 70%;
+    margin: 10px auto;
+}
+.uni-logo{
+    width: 20%;
+    height: auto;
+}
+

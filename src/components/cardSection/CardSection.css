@@ -1,0 +1,11 @@
+.card-section{
+    text-align: center;
+    color: #004774;
+}
+
+.card-section-main{
+    display: flex;
+    margin: 10px auto;
+    flex-wrap: wrap;
+  justify-content: center;
+}

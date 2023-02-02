@@ -1,0 +1,36 @@
+.enroll-section{
+    background-color: rgb(255, 231, 255);
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.enroll-heading{
+    text-align: center;
+}
+.enroll-section-main{
+    display: flex;
+    justify-content: center;
+}
+.graduate-student-img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+.student-cap{
+    margin-top: 5px;
+    width: 40px;
+    height: 50px;
+    margin-right: 10px;
+}
+
+.enroll-text{
+    font-family: poppins,sans-serif!important;
+}
+
+@media screen and (max-width: 600px) {
+    .enroll-section-main{
+        margin: 10px 20px;
+        display: flex;
+        justify-content: center;
+    }
+}

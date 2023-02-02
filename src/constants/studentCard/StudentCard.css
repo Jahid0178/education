@@ -1,0 +1,50 @@
+
+.student-card{
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 40px;
+    height: 420px;
+    width: 260px;
+    font-family: poppins,sans-serif!important;
+}
+.profile-section{
+    display: flex;
+    margin-left: 20px;
+}
+.profile-data{
+    text-align: left;
+    margin-left: 20px;
+}
+.student-card-text{
+    color: gray;
+    text-align: left;
+    line-height: 1.5rem;
+}
+.profile-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.student-card-heading{
+    color: black;
+    margin-top: 0px;
+    font-size: 18px;
+}
+.student-card-marks{
+    color: rgb(87, 156, 179);
+    margin-top: -10px;
+    font-size: 14px;
+}
+
+
+@media screen and (max-width: 600px) {
+    .student-card{
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px 40px;
+        height: 400px;
+        width: auto;
+        margin: 20px auto;
+        font-family: poppins,sans-serif!important;
+    }
+}

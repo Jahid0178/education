@@ -1,0 +1,134 @@
+.footer {
+  background-color: #004774;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer-logo {
+  width: 150px;
+  height: 70px;
+  display: block;
+}
+
+.footer-text {
+  color: #fff;
+}
+.footer-heading {
+  color: #fff;
+  font-weight: 400;
+  padding-bottom: 3px;
+  padding-top: 6px;
+  font-size: 24px;
+  line-height: 1.2rem;
+  margin-bottom: 3px;
+}
+
+.hr-line {
+  height: 0.7px;
+  background: #fff;
+  border: none;
+  width: 40px;
+  display: inline-block;
+
+}
+
+.locate-us {
+  font-family: poppins, sans-serif !important;
+  cursor: pointer;
+  border: 2px solid #ffffff;
+  width: 80px;
+  color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff !important;
+  border-radius: 35px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  padding: 0 14px;
+  background-color: transparent;
+  border: 2px solid;
+}
+
+.footer-link-address {
+  color: #f6f6f6 !important;
+  text-decoration: none;
+  display: block;
+  font-family: poppins,sans-serif!important;
+  line-height: 23px;
+
+}
+.footer-link {
+    color: #f6f6f6 !important;
+    text-decoration: none;
+    display: block;
+    line-height: 2.6rem;
+    font-family: poppins,sans-serif!important;
+
+  }
+.subscribe-btn {
+  border-radius: 20px;
+  background: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 8px 20px;
+  cursor: pointer;
+  display: flex;
+  margin: 0px auto;
+}
+
+.footer-icon-section {
+  display: flex;
+  width: 64px;
+  justify-content: space-between;
+  margin: -10px auto 0px auto;
+}
+.footer-icon {
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 2px 7px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.footer-input {
+  display: block;
+  margin: 10px 0px 15px 0px;
+  border-radius: 20px;
+  border: 2px solid #0c7abf !important;
+  padding: 10px 20px;
+  width: 80%;
+}
+.footer-input:focus {
+  outline: none;
+}
+
+.follow-heading {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.address-section{
+    display: flex;
+margin-top: -10px;
+margin-bottom: -20px;
+}
+
+.address-logo{
+    margin-top: 20px;
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  .footer-input{
+    display: flex;
+    margin: 10px auto 15px auto;
+    border-radius: 20px;
+    border: 2px solid #0c7abf !important;
+    padding: 10px 20px;
+    width: 80%;
+  }
+}

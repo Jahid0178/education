@@ -1,0 +1,49 @@
+.proud-moment {
+  background-color: #ffd800;
+  padding: 60px 0px;
+}
+.proud-moment-video {
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  margin: 0px auto;
+}
+
+.proud-moment-section {
+  margin-top: 10rem;
+}
+
+.proud-moment-btn {
+  background-color: #0c71c3;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+
+  cursor: pointer;
+}
+.proud-moment-heading {
+  font-size: xx-large;
+  color: #333;
+  font-weight: 500;
+  line-height: 1em;
+  margin-bottom: 0px;
+}
+
+.proud {
+  display: flex !important;
+  flex-direction: row-reverse !important;
+}
+
+@media screen and (max-width: 600px) {
+  .proud-moment-section {
+    margin-top: -30px;
+    margin-bottom: 30px;
+  }
+  .proud-moment-video {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    margin: 0px auto;
+  }
+}

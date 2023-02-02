@@ -1,0 +1,152 @@
+.form {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: auto;
+  background-image: linear-gradient(
+      147deg,
+      rgba(12, 0, 0, 0.76) 37%,
+      rgba(12, 0, 0, 0.79) 96%
+    ),
+    url("../../assets/bg-home.jpg");
+    padding-bottom: 20px;
+}
+
+.form-heading {
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  color: #ffffff !important;
+  line-height: 1.2em;
+  margin-top: 90px;
+}
+
+.logo {
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.form-sub-heading {
+  font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+  font-weight: 200;
+  font-size: 22px;
+  color: #ffffff !important;
+  line-height: 1em;
+}
+.form-text {
+  font-size: 20px;
+  font-family: 'Open Sans',Helvetica,Arial,Lucida,sans-serif;
+  font-weight: 300;
+  color: #FFFFFF!important;
+  line-height: 1.5em;
+}
+
+.form-sub-text {
+  line-height: 2em;
+  font-size: 16px !important;
+  color: #ffffff !important;
+  font-weight: 300 ;
+}
+
+.form-section {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px 20px 20px;
+  text-align: center;
+  width: 260px;
+}
+
+.form-section-heading {
+  color: #0c71c3 !important;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.form-input {
+  width: 90%;
+  height: 30px;
+  border: 1px solid #0c71c3;
+  margin-top: 10px;
+}
+
+.form-input:focus {
+  outline: none;
+}
+
+.form-section-text {
+  color: rgb(12, 113, 195) !important;
+  font-size: 14px;
+}
+
+.alert {
+  color: #666;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.form-button {
+  background-color: #0c71c3;
+  border-radius: 15px;
+  border: none;
+  color: #ffffff;
+  width: 90%;
+  padding: 20px 0px;
+  margin-top: 10px;
+  cursor: pointer;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.form-section-main {
+  padding-top: 100px;
+}
+
+.call {
+  position: fixed;
+  bottom: 22px;
+  left: 19px;
+}
+
+.call-section{
+    background-color: #ffffff;
+    position: fixed;
+    bottom: 18px;
+    left: 15px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    width: 150px;
+    height: 50px;
+    margin-top: -60px;
+    cursor: pointer;
+  }
+  .form-heading {
+    font-family: "Open Sans", Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #ffffff !important;
+    line-height: 1em;
+    margin-top: 30px;
+  }
+  .form-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 10px 20px 20px 20px;
+    text-align: center;
+    width: 300px;
+    margin: 10px auto;
+  }
+  
+}

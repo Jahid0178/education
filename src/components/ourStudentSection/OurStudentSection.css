@@ -1,0 +1,51 @@
+.our-student-heading {
+  text-align: center;
+  background-color: #0a3150 !important;
+  padding: 17px 25px;
+  border-radius: 15px;
+  color: #fff;
+  width: 30%;
+  font-weight: 500;
+  margin: 20px auto;
+  line-height: 1.2;
+  font-family: poppins, sans-serif !important;
+}
+.video-section {
+  display: flex;
+  width: 90%;
+  margin: 10px auto;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.video {
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 270px;
+  background-color: black;
+}
+
+@media screen and (max-width: 600px) {
+  .our-student-heading {
+    text-align: center;
+    background-color: #0a3150 !important;
+    padding: 17px 25px;
+    border-radius: 15px;
+    color: #fff;
+    width: 80%;
+    font-weight: 400;
+    margin: 20px auto;
+    line-height: 1.2;
+    font-family: poppins, sans-serif !important;
+    font-size: 30;
+  }
+  .video {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 270px;
+    background-color: black;
+    margin-bottom: 20px;
+  }
+}
