@@ -18,6 +18,12 @@ const Form = () => {
     });
   };
 
+  const errorPopUp = (msg) => {
+    toast.error(msg, {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
+
   const handleChange = (e) => {
     const name = e.target.name;
     const value = e.target.value;
@@ -37,10 +43,12 @@ const Form = () => {
         (result) => {
           if (result.status === 200) {
             notify();
+            e.target.reset();
+            setFormValues("");
           }
         },
         (error) => {
-          console.log(error.text);
+          errorPopUp(error.text);
         }
       );
   };
@@ -82,32 +90,40 @@ const Form = () => {
                 </p>
                 <form onSubmit={handleFormSubmit} ref={form}>
                   <input
+                    type="text"
                     placeholder="Name"
                     className="form-input"
                     name="name"
                     value={formValues.name}
                     onChange={handleChange}
+                    required
                   />
                   <input
-                    placeholder="Email Adress"
+                    type="email"
+                    placeholder="Email Address"
                     className="form-input"
                     name="email"
                     value={formValues.email}
                     onChange={handleChange}
+                    required
                   />
                   <input
+                    type="number"
                     placeholder="Phone Number"
-                    className="form-input"
+                    className="form-input input-number"
                     name="phoneNumber"
                     value={formValues.phoneNumber}
                     onChange={handleChange}
+                    required
                   />
                   <input
+                    type="text"
                     placeholder="City"
                     className="form-input"
                     name="city"
                     value={formValues.city}
                     onChange={handleChange}
+                    required
                   />
                   <button className="form-button">
                     Get a call back from an expert
