@@ -5,24 +5,9 @@ import "./Form.css";
 import { Container } from "@mui/material";
 import Call from "../../assets/call.gif";
 import emailjs from "@emailjs/browser";
-import { toast, ToastContainer } from "react-toastify";
-
-import "react-toastify/dist/ReactToastify.css";
 const Form = () => {
   const [formValues, setFormValues] = useState({});
   const form = useRef();
-
-  const notify = () => {
-    toast.success("Form Submission Success", {
-      position: toast.POSITION.TOP_CENTER,
-    });
-  };
-
-  const errorPopUp = (msg) => {
-    toast.error(msg, {
-      position: toast.POSITION.TOP_CENTER,
-    });
-  };
 
   const handleChange = (e) => {
     const name = e.target.name;
@@ -42,13 +27,15 @@ const Form = () => {
       .then(
         (result) => {
           if (result.status === 200) {
-            notify();
             e.target.reset();
             setFormValues("");
+            window.location.replace(
+              "https://www.sageeducation.ae/campaigns/sat-coaching-dubai/thanks.php"
+            );
           }
         },
         (error) => {
-          errorPopUp(error.text);
+          console.log(error);
         }
       );
   };
@@ -59,7 +46,6 @@ const Form = () => {
 
   return (
     <div id="form" className="form">
-      <ToastContainer />;
       <div className="form-section-main">
         <Container>
           <Grid container spacing={0}>
