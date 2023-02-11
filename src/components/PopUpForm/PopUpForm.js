@@ -2,25 +2,11 @@ import React, { useRef } from "react";
 import { useForm } from "react-hook-form";
 import { GrFormClose } from "react-icons/gr";
 import emailjs from "@emailjs/browser";
-import { toast, ToastContainer } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import styles from "./style.module.css";
 
 const PopUpForm = ({ heading, title, setIsOpenPopUp }) => {
   const { register, handleSubmit } = useForm();
   const form = useRef();
-
-  const notify = () => {
-    toast.success("Form Submission Successfully", {
-      position: toast.POSITION.TOP_CENTER,
-    });
-  };
-
-  const errorPopUp = (msg) => {
-    toast.error(msg, {
-      position: toast.POSITION.TOP_CENTER,
-    });
-  };
 
   const onSubmit = (data) => {
     emailjs
@@ -34,7 +20,6 @@ const PopUpForm = ({ heading, title, setIsOpenPopUp }) => {
         (result) => {
           console.log(result);
           if (result.status === 200) {
-            notify();
             setIsOpenPopUp(false);
             window.location.replace(
               "https://www.sageeducation.ae/campaigns/sat-coaching-dubai/thanks.php"
@@ -42,14 +27,13 @@ const PopUpForm = ({ heading, title, setIsOpenPopUp }) => {
           }
         },
         (error) => {
-          errorPopUp(error.text);
+          console.log(error);
         }
       );
   };
   return (
     <>
       <div className={styles.formContainer}>
-        <ToastContainer />
         <div className={styles.formHeading}>
           <span>
             <h2>{heading}</h2>
