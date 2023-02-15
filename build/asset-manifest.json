@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/campaigns/sat-coaching-dubai/static/css/main.945c20f4.css",
+    "main.js": "/campaigns/sat-coaching-dubai/static/js/main.340a9d02.js",
+    "static/js/787.369bfca2.chunk.js": "/campaigns/sat-coaching-dubai/static/js/787.369bfca2.chunk.js",
+    "static/media/proud-moment.mp4": "/campaigns/sat-coaching-dubai/static/media/proud-moment.a57752a1bc4b257eec87.mp4",
+    "static/media/academy.jpg": "/campaigns/sat-coaching-dubai/static/media/academy.652bdcaadbf758f1c949.jpg",
+    "static/media/videoOne.mp4": "/campaigns/sat-coaching-dubai/static/media/videoOne.c68ddda0e15fc40be75e.mp4",
+    "static/media/videoThree.mp4": "/campaigns/sat-coaching-dubai/static/media/videoThree.e5e5bc5f146808dc022e.mp4",
+    "static/media/videoTwo.mp4": "/campaigns/sat-coaching-dubai/static/media/videoTwo.e63b901a4fa22058b697.mp4",
+    "static/media/degree.jpg": "/campaigns/sat-coaching-dubai/static/media/degree.abcd72c911918f637bf0.jpg",
+    "static/media/bg-home.jpg": "/campaigns/sat-coaching-dubai/static/media/bg-home.3ecb5839432a9a2bd6bd.jpg",
+    "static/media/profile-one.jpeg": "/campaigns/sat-coaching-dubai/static/media/profile-one.f2e69cd69cce116cdcfb.jpeg",
+    "static/media/illinois-university.jpg": "/campaigns/sat-coaching-dubai/static/media/illinois-university.727aa52f071ec030c79e.jpg",
+    "static/media/passport.png": "/campaigns/sat-coaching-dubai/static/media/passport.0269c3bb7ea7343b8cb8.png",
+    "static/media/cornell-university.png": "/campaigns/sat-coaching-dubai/static/media/cornell-university.6c2e8f01bab4b80e78dc.png",
+    "static/media/profile-two.jpeg": "/campaigns/sat-coaching-dubai/static/media/profile-two.2ea995e3eccece49b790.jpeg",
+    "static/media/graduating-student.png": "/campaigns/sat-coaching-dubai/static/media/graduating-student.bf09abb7a6aca6887830.png",
+    "static/media/profile-three.jpeg": "/campaigns/sat-coaching-dubai/static/media/profile-three.485e0313a094eeb7a216.jpeg",
+    "static/media/sage-logo.png": "/campaigns/sat-coaching-dubai/static/media/sage-logo.1dc4359e3a34ff7b0938.png",
+    "static/media/graduate.png": "/campaigns/sat-coaching-dubai/static/media/graduate.37991bfc0b9f5f6040ef.png",
+    "static/media/call.gif": "/campaigns/sat-coaching-dubai/static/media/call.b21200d173f1f05b37a6.gif",
+    "index.html": "/campaigns/sat-coaching-dubai/index.html",
+    "main.945c20f4.css.map": "/campaigns/sat-coaching-dubai/static/css/main.945c20f4.css.map",
+    "main.340a9d02.js.map": "/campaigns/sat-coaching-dubai/static/js/main.340a9d02.js.map",
+    "787.369bfca2.chunk.js.map": "/campaigns/sat-coaching-dubai/static/js/787.369bfca2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.945c20f4.css",
+    "static/js/main.340a9d02.js"
+  ]
+}
